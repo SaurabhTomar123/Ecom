@@ -1,0 +1,246 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+}
+.search-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.search-box{
+    width: 9rem;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid black;
+   text-align: left;
+   height: 2em;
+}
+.search-icon{
+    list-style: none;
+
+}
+.header-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.carousel{
+    margin-bottom: 5em;
+}
+.card-list{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(4, minmax(250px,1fr));
+
+}
+@media screen and (max-width: 1200px) {
+ 
+    .card-list{
+        grid-template-columns: repeat(2,minmax(12px,1fr));
+        grid-gap: 1rem;
+    
+    }
+  
+  }
+  .card{
+    width: fit-content;
+    height: max-content;
+  }
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.img_style{
+    width: 800px;
+    height: max-content;
+    border-radius: 5px;
+    border: none;
+    
+}
+.image-section{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.image-holder{
+display: flex;
+padding-left: 40px;
+padding-right: 40px;
+margin-bottom: 2em;
+align-items: center;
+background-color: rgba(250, 135, 12, 0.881);
+}
+.img-description{
+    padding-left: 20px;
+    text-decoration: dotted;
+    color: white;
+    font-style: italic;
+}
+.shop-btn{
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+
+}
+.shop-btn:hover{
+ background-color: rgb(19, 186, 246);
+ border: none;
+ cursor: pointer;
+}
+@media screen and (max-width : 1360px) {
+    .image-holder{
+        display: block;
+    }
+    .img_style{
+        max-width: 250px;
+        padding-right: 20px;
+        margin:5px;
+        height: max-content;
+
+    }
+    .shop-btn{
+        margin-bottom: 5px;
+    }
+    .img-description{
+        padding-left: 1px;
+    }
+}
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+
+}
+ .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+ }
+ .border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+
+ }
+ .row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+ }
+ .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+ }
+ .testimonial{
+    background: #fff;
+    padding: 30px;
+
+ }
+ .testimonial img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+ 
+ }
+ .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+ }
+ .stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+ }
+ @media screen and(max-width:960px) {
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+    
+ } 
+@media screen and (max-width:600px) {
+      .col{
+        flex: 100%;
+        max-width: 100%;
+      }
+}
+
+.me-4 link-secondary{
+    padding-left: 15px;
+}
+
+.wrapper{
+    max-height: 500px;
+    border: 1px solid #ddd;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid;
+    overflow-y: auto;
+    grid-template-columns: repeat(10, minmax(300px,2fr));
+    text-decoration: dotted;
+    overflow-y: hidden;
+
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.wrapper .sale-item{
+    min-width: 110px;
+    height: 500px;
+    line-height: 110px;
+    text-align: center;
+    margin-right: 2px;
+    border: 1px solid #f1f1f1;
+}
+.sale-item{
+    display: block;
+    text-align: center;
+}
+.sale-item img{
+    width: fit-content;
+    height: 100px;
+}
+.sale-btn{
+    width: 100%;
+    height: 10vh;
+    cursor: pointer;
+    background-color: rgba(250, 135, 12, 0.881);
+    color: white;
+    text-decoration: dotted;
+    font-size: large;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.view-all{
+   display: flex;
+   cursor: pointer;
+   border-radius: 2px;
+   border: none;
+   background-color: white;
+   color: blue;
+}
+.flex-direction{
+    display: flex;
+    justify-content: flex-end;
+}
